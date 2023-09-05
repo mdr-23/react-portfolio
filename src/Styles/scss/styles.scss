@@ -1,0 +1,16 @@
+@import './base/colors';
+@import './base/fonts';
+@import './components/navbar';
+@import './components/intro';
+@import './components/skills';
+@import './components/projects';
+@import './components/work';
+@import './components/contact';
+
+body{
+    background-color: $black !important;
+}
+
+p{
+    font-family: 'Roboto Regular' !important;
+}

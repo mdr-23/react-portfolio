@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Styles/css/styles.css';
 import './App.css';
+import Nav from './Components/Navbar';
+import { NextUIProvider } from '@nextui-org/react';
+import Home from './Pages/Home';
+import ThemeProvider from './Context/ThemeContext';
+import Skills from './Components/Skills';
+import Projects from './Components/Projects';
+import WorkExperience from './Components/WorkExperience';
+import Contact from './Components/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <NextUIProvider>
+      <div className="App">
+
+        <ThemeProvider>
+          <Nav />
+          <Home />
+          <Skills />
+          <Projects />
+          <WorkExperience />
+          <Contact />
+        </ThemeProvider>
+
+      </div>
+    </NextUIProvider>
   );
 }
 

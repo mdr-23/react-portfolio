@@ -1,0 +1,52 @@
+// COMMON STYLES
+
+.skills-slider-img{
+    height: 180px;
+    margin: 100px 0 200px 0;
+}
+
+// BAIRES STYLES
+
+.skills-baires{
+    background-image: url('../../Images/baires.jpg') !important;
+    background-size: cover;
+}
+
+.baires-veil{
+    background-color: $baires-veil;
+}
+
+.baires-skills-subtitle{
+    font-family: "Brand";
+    font-size: 15px !important;
+    padding: 100px 50px 0 50px;
+    color: $white;
+}
+
+.baires-skills-title{
+    font-family: "Title";
+    padding: 0px 50px 0 50px;
+}
+
+// MUNICH STYLES
+
+.skills-munich{
+    background-image: url('../../Images/munich.jpg') !important;
+    background-size: cover;
+}
+
+.munich-veil{
+    background-color: $munich-veil;
+}
+
+.munich-skills-subtitle{
+    font-family: "Brand";
+    font-size: 15px !important;
+    padding: 50px 50px 0 50px;
+    color: $white;
+}
+
+.munich-skills-title{
+    font-family: "Title";
+    padding: 0px 50px;
+}

@@ -1,0 +1,130 @@
+// BAIRES STYLES
+
+.contact-baires{
+    background-color: $white;
+    padding: 100px 0;
+}
+
+.baires-contact-subtitle{
+    font-family: "Brand";
+    font-size: 15px !important;
+    color: $baires;
+    padding-left: 10px;
+}
+
+.baires-contact-title{
+    font-family: "Title";
+    color: $black;
+    padding-left: 10px;
+}
+
+.baires-contact-card{
+    border: none;
+    padding: 50px 50px 0 50px;
+    background-color: $white-veil;
+    width: 50% !important;
+}
+
+.baires-contact-form label {
+    border: none !important;
+    color: $black !important;
+    font-family: 'Roboto Bold';
+    font-size: 18px;
+}
+
+.baires-contact-form input, textarea {
+    background-color: $white !important;
+    border: none !important;
+    color: $black !important;
+    font-family: 'Roboto Bold';
+    font-size: 18px;
+}
+
+.baires-contact-form textarea {
+    height: 150px ;
+    font-family: 'Roboto Bold';
+    font-size: 18px;
+    color: $black !important;
+}
+
+.baires-contact-form button{
+    background-color: $baires;
+    border-color: $baires;
+    font-family: 'Roboto Bold';
+    display: flex;
+    align-items: center;
+}
+
+.baires-contact-form button:hover{
+    background-color: $baires-dark;
+}
+
+// MUNICH STYLES
+
+.contact-munich{
+    background-color: $black;
+    padding: 100px 0;
+}
+
+.munich-contact-subtitle{
+    font-family: "Brand";
+    font-size: 15px !important;
+    color: $white;
+    padding-left: 10px;
+}
+
+.munich-contact-title{
+    font-family: "Title";
+    color: $munich;
+    padding-left: 10px;
+}
+
+.munich-contact-card{
+    border: none;
+    padding: 50px 50px 0 50px;
+    background-color: $black-veil;
+    width: 50% !important;
+}
+
+.munich-contact-form input, textarea, label {
+    border-color: $black !important;
+    color: $white !important;
+    font-family: 'Roboto Bold';
+    font-size: 18px;
+}
+
+.munich-contact-form input {
+    background-color: $black !important;
+}
+
+.munich-contact-form textarea {
+    height: 150px ;
+    background-color: $black !important;
+    font-family: 'Roboto Bold';
+    font-size: 18px;
+}
+
+.munich-contact-form input:active{
+    border-color: $munich;
+}
+
+.munich-contact-form button{
+    background-color: $munich;
+    border-color: $munich;
+    font-family: 'Roboto Bold';
+    color: $black;
+    display: flex;
+    align-items: center;
+}
+
+.munich-contact-form button:hover{
+    background-color: $munich-veil;
+    color: $black;
+    border-color: $munich-veil;
+}
+
+.munich-contact-form input:focus{
+    background-color: $black;
+    color: $black;
+    border: none !important;
+}

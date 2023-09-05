@@ -1,0 +1,33 @@
+.brand{
+    font-family: 'Brand';
+    font-size: 30px;
+}
+
+.navbar-baires{
+    background-color: $baires !important;
+    border-bottom: double 9px $white;
+    padding: 20px 110px 20px 110px;
+}
+
+.navbar-munich{
+    background-color: $munich !important;
+    border-bottom: double 9px $black;
+    padding: 20px 110px 20px 110px;
+}
+
+.btn-baires{
+    background-color: transparent !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    color: $black !important;
+    padding-left: 50px;
+}
+
+.btn-munich{
+    background-color: transparent !important;
+    color: $black !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+}

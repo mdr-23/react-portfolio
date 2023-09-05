@@ -1,0 +1,576 @@
+@font-face {
+  font-family: "Title";
+  src: url("../.././Fonts/beyondworthdemo-z8pzx.otf") format("truetype");
+}
+@font-face {
+  font-family: "Brand";
+  src: url("../.././Fonts/Essential-Economy-Demo-BF64e7109a37809.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../.././Fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Italic";
+  src: url("../.././Fonts/Roboto-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Black";
+  src: url("../.././Fonts/Roboto-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../.././Fonts/Roboto-Regular.ttf") format("truetype");
+}
+.brand {
+  font-family: "Brand";
+  font-size: 30px;
+}
+
+.navbar-baires {
+  background-color: #5f91d7 !important;
+  border-bottom: double 9px #fff;
+  padding: 20px 110px 20px 110px;
+}
+
+.navbar-munich {
+  background-color: #f5d033 !important;
+  border-bottom: double 9px #101010;
+  padding: 20px 110px 20px 110px;
+}
+
+.btn-baires {
+  background-color: transparent !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  color: #101010 !important;
+  padding-left: 50px;
+}
+
+.btn-munich {
+  background-color: transparent !important;
+  color: #101010 !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
+}
+
+.intro-baires {
+  background-color: #fff !important;
+  height: 86.3vh;
+}
+
+.baires-intro-title {
+  font-family: "Title";
+  font-size: 45px;
+  line-height: 80px;
+  padding-top: 100px;
+  padding-left: 50px;
+  color: #101010;
+}
+
+.title-martin-baires {
+  font-size: 90px;
+  letter-spacing: 2px;
+  color: #5f91d7;
+  font-family: "Brand";
+}
+
+.baires-intro-p {
+  color: #101010;
+}
+
+.intro-munich {
+  background-color: #101010 !important;
+  height: 86.3vh;
+}
+
+.munich-intro-title {
+  font-family: "Title";
+  font-size: 45px;
+  line-height: 80px;
+  padding-top: 100px;
+  padding-left: 50px;
+  color: #fff;
+}
+
+.title-martin-munich {
+  font-size: 90px;
+  letter-spacing: 2px;
+  color: #f5d033;
+  font-family: "Brand";
+}
+
+.munich-intro-p {
+  color: #fff;
+}
+
+.skills-slider-img {
+  height: 180px;
+  margin: 100px 0 200px 0;
+}
+
+.skills-baires {
+  background-image: url("../../Images/baires.jpg") !important;
+  background-size: cover;
+}
+
+.baires-veil {
+  background-color: #5f91d79f;
+}
+
+.baires-skills-subtitle {
+  font-family: "Brand";
+  font-size: 15px !important;
+  padding: 100px 50px 0 50px;
+  color: #fff;
+}
+
+.baires-skills-title {
+  font-family: "Title";
+  padding: 0px 50px 0 50px;
+}
+
+.skills-munich {
+  background-image: url("../../Images/munich.jpg") !important;
+  background-size: cover;
+}
+
+.munich-veil {
+  background-color: #f5d0339f;
+}
+
+.munich-skills-subtitle {
+  font-family: "Brand";
+  font-size: 15px !important;
+  padding: 50px 50px 0 50px;
+  color: #fff;
+}
+
+.munich-skills-title {
+  font-family: "Title";
+  padding: 0px 50px;
+}
+
+.one-bg {
+  background-image: url("../../Images/one-to-one.png");
+  background-size: cover;
+}
+
+.lpm-bg {
+  background-image: url("../../Images/manchego.png");
+  background-size: cover;
+}
+
+.afec-bg {
+  background-image: url("../../Images/afec.png");
+  background-size: cover;
+}
+
+.ds-bg {
+  background-image: url("../../Images/ds.png");
+  background-size: cover;
+}
+
+.baires-projects-subtitle {
+  color: #5f91d7;
+  font-family: "Brand";
+  font-size: 15px !important;
+  padding: 100px 50px 0 50px;
+}
+
+.baires-projects-p {
+  font-family: "Roboto Bold" !important;
+  padding: 0px 350px 50px 50px;
+  color: #303030d3;
+  font-size: 18px;
+}
+
+.projects-baires {
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+
+.baires-card-veil {
+  background-color: #5f91d79f !important;
+  margin: -1px -13px;
+  border: solid #fff 3px;
+  border-radius: 5px;
+  height: 24rem;
+  width: 15rem;
+  cursor: pointer;
+}
+
+.baires-web-icon {
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 80px !important;
+}
+
+.baires-web-icon:hover {
+  color: #fff;
+}
+
+.baires-github-icon {
+  color: #f3f3f3d2;
+  font-size: 60px !important;
+}
+
+.baires-github-icon:hover {
+  color: #fff;
+}
+
+.baires-card-veil2 {
+  background-color: #5f91d79f !important;
+  margin: -12px !important;
+  padding: 0px 15px 60px 15px !important;
+  border-radius: 2px;
+}
+
+.baires-card-title {
+  margin-top: 40px;
+  padding-top: 15px;
+  font-family: "Brand";
+  font-size: 22px;
+  color: #fff;
+}
+
+.baires-card-subtitle {
+  font-family: "Roboto Black";
+  font-size: 14px;
+  color: #101010;
+  margin: 15px 0;
+}
+
+.baires-card-text {
+  color: #101010;
+  font-size: 12px;
+}
+
+.projects-munich {
+  background-color: #101010;
+  padding-bottom: 100px;
+}
+
+.munich-projects-title {
+  font-family: "Title";
+  padding: 0px 50px;
+  color: #f5d033;
+}
+
+.munich-projects-p {
+  font-family: "Roboto Bold" !important;
+  padding: 0px 350px 50px 50px;
+  color: rgba(196, 196, 196, 0.767);
+  font-size: 18px;
+}
+
+.munich-card-veil {
+  background-color: rgba(0, 0, 0, 0.884) !important;
+  margin: -1px -13px;
+  border: solid #101010 3px;
+  border-radius: 5px;
+  height: 24rem;
+  width: 15rem;
+  cursor: pointer;
+}
+
+.munich-web-icon {
+  color: #f5d0339f;
+  font-size: 80px !important;
+}
+
+.munich-web-icon:hover {
+  color: #f5d033;
+}
+
+.munich-github-icon {
+  color: #f5d0339f;
+  font-size: 60px !important;
+}
+
+.munich-github-icon:hover {
+  color: #f5d033;
+}
+
+.munich-card-veil2 {
+  background-color: rgba(0, 0, 0, 0.377) !important;
+  margin: -12px !important;
+  padding: 0px 15px 60px 15px !important;
+  border-radius: 2px;
+}
+
+.munich-card-title {
+  margin-top: 40px;
+  padding-top: 15px;
+  font-family: "Brand";
+  font-size: 22px;
+  color: #f5d033;
+}
+
+.munich-card-subtitle {
+  font-family: "Roboto Black";
+  font-size: 14px;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.munich-card-text {
+  color: #fff;
+  font-size: 12px;
+}
+
+.works-title {
+  font-family: "Roboto Black";
+  font-size: 22px;
+  color: #101010;
+}
+
+.works-date {
+  font-family: "Roboto Bold";
+  font-size: 16px;
+  position: relative;
+  right: 98px;
+  top: 40px;
+  text-align: left !important;
+}
+
+.works-company {
+  font-family: "Roboto Bold";
+  font-size: 18px;
+}
+
+.works-p {
+  font-size: 16px;
+  padding-right: 50px;
+}
+
+.works-baires {
+  background-color: #5f91d7 !important;
+  background-size: cover !important;
+}
+
+ul.timeline-baires {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline-baires:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 9px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline-baires > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline-baires > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #5f91d79f;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.baires-svg {
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.works-munich {
+  background-color: #f5d033 !important;
+  background-size: cover !important;
+}
+
+ul.timeline-munich {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline-munich:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 9px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline-munich > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline-munich > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #f5d0339f;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.munich-svg {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+  position: relative;
+  top: 5px;
+}
+
+.contact-baires {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.baires-contact-subtitle {
+  font-family: "Brand";
+  font-size: 15px !important;
+  color: #5f91d7;
+  padding-left: 10px;
+}
+
+.baires-contact-title {
+  font-family: "Title";
+  color: #101010;
+  padding-left: 10px;
+}
+
+.baires-contact-card {
+  border: none;
+  padding: 50px 50px 0 50px;
+  background-color: rgba(196, 196, 196, 0.767);
+  width: 50% !important;
+}
+
+.baires-contact-form label {
+  border: none !important;
+  color: #101010 !important;
+  font-family: "Roboto Bold";
+  font-size: 18px;
+}
+
+.baires-contact-form input, textarea {
+  background-color: #fff !important;
+  border: none !important;
+  color: #101010 !important;
+  font-family: "Roboto Bold";
+  font-size: 18px;
+}
+
+.baires-contact-form textarea {
+  height: 150px;
+  font-family: "Roboto Bold";
+  font-size: 18px;
+  color: #101010 !important;
+}
+
+.baires-contact-form button {
+  background-color: #5f91d7;
+  border-color: #5f91d7;
+  font-family: "Roboto Bold";
+  display: flex;
+  align-items: center;
+}
+
+.baires-contact-form button:hover {
+  background-color: #4072b8;
+}
+
+.contact-munich {
+  background-color: #101010;
+  padding: 100px 0;
+}
+
+.munich-contact-subtitle {
+  font-family: "Brand";
+  font-size: 15px !important;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.munich-contact-title {
+  font-family: "Title";
+  color: #f5d033;
+  padding-left: 10px;
+}
+
+.munich-contact-card {
+  border: none;
+  padding: 50px 50px 0 50px;
+  background-color: #303030d3;
+  width: 50% !important;
+}
+
+.munich-contact-form input, textarea, label {
+  border-color: #101010 !important;
+  color: #fff !important;
+  font-family: "Roboto Bold";
+  font-size: 18px;
+}
+
+.munich-contact-form input {
+  background-color: #101010 !important;
+}
+
+.munich-contact-form textarea {
+  height: 150px;
+  background-color: #101010 !important;
+  font-family: "Roboto Bold";
+  font-size: 18px;
+}
+
+.munich-contact-form input:active {
+  border-color: #f5d033;
+}
+
+.munich-contact-form button {
+  background-color: #f5d033;
+  border-color: #f5d033;
+  font-family: "Roboto Bold";
+  color: #101010;
+  display: flex;
+  align-items: center;
+}
+
+.munich-contact-form button:hover {
+  background-color: #f5d0339f;
+  color: #101010;
+  border-color: #f5d0339f;
+}
+
+.munich-contact-form input:focus {
+  background-color: #101010;
+  color: #101010;
+  border: none !important;
+}
+
+body {
+  background-color: #101010 !important;
+}
+
+p {
+  font-family: "Roboto Regular" !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
