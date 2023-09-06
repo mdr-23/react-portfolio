@@ -210,3 +210,19 @@ ul.timeline-munich {
     margin-bottom: -6px;
   }
 }
+
+// TABLET STYLES
+
+@media only screen and (min-width: 768px) and (max-width: 1140px){
+
+  .SVGbaires{
+    height: 200px !important;
+    max-width: 768px !important;
+  }
+
+  .SVGmuenchen{
+    height: 150px;
+    max-width: 768px !important;
+  }
+
+}

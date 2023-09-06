@@ -35,11 +35,11 @@ function Navigation() {
   };
 
   return (
-    <Navbar collapseOnSelect expand="lg" className={radioValue === '0' ? "bg-body-tertiary navbar-baires" : "bg-body-tertiary navbar-munich"}>
+    <Navbar collapseOnSelect expand="md" className={radioValue === '0' ? "bg-body-tertiary navbar-baires" : "bg-body-tertiary navbar-munich"}>
       <Container>
         <Navbar.Brand className='brand' href="#home">MDR</Navbar.Brand>
 
-          <Nav className='d-none d-sm-flex justify-content-end'>
+          <Nav className='d-none d-md-flex justify-content-end align-items-center'>
             <Nav.Link className='navlink' eventKey={2} href="#projects">
               Projects
             </Nav.Link>

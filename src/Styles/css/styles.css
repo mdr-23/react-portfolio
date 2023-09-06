@@ -122,6 +122,26 @@
     background-color: #f5d033;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .brand {
+    font-size: 25px;
+  }
+
+  .navlink {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .btn-baires {
+    padding-left: 20px;
+    font-family: "Roboto Bold";
+    font-size: 12px;
+  }
+
+  .btn-munich {
+    font-size: 12px;
+  }
+}
 .intro-baires {
   background-color: #f0f0f0 !important;
   height: 86.3vh;
@@ -669,6 +689,17 @@ ul.timeline-munich > li:before {
     height: 100px;
     width: 350px;
     margin-bottom: -6px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1140px) {
+  .SVGbaires {
+    height: 200px !important;
+    max-width: 768px !important;
+  }
+
+  .SVGmuenchen {
+    height: 150px;
+    max-width: 768px !important;
   }
 }
 .contact-baires {
