@@ -69,7 +69,7 @@ function Contact(){
                                         </Button>
                                     )}
 
-                                    <input type="hidden" name="_next" value="https://mdr-portfolio.onrender.com//email-sent" />
+                                    <input type="hidden" name="_next" value="https://mdr-portfolio.onrender.com/email-sent" />
                                     <input type="hidden" name="_captcha" value="false" />
                                     <input type="hidden" name="_template" value="table" />
                                 </Form>
