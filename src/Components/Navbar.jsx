@@ -4,12 +4,19 @@ import { ButtonGroup, ToggleButton } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { RiMenu5Fill } from "react-icons/ri";
 import { ThemeContext } from '../Context/ThemeContext';
 
 function Navigation() {
 
   const [radioValue, setRadioValue] = useState('0');
   const context = useContext(ThemeContext)
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const radios = [
     { name: "Baires", value: '0', class:'btn-baires' },
@@ -31,17 +38,15 @@ function Navigation() {
     <Navbar collapseOnSelect expand="lg" className={radioValue === '0' ? "bg-body-tertiary navbar-baires" : "bg-body-tertiary navbar-munich"}>
       <Container>
         <Navbar.Brand className='brand' href="#home">MDR</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse className="justify-content-end">
-          <Nav>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link eventKey={2} href="#projects">
+
+          <Nav className='d-none d-sm-flex justify-content-end'>
+            <Nav.Link className='navlink' eventKey={2} href="#projects">
               Projects
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#works">
+            <Nav.Link className='navlink' eventKey={2} href="#works">
               Work Experience
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#contact">
+            <Nav.Link className='navlink' eventKey={2} href="#contact">
               Contact
             </Nav.Link>
 
@@ -66,7 +71,50 @@ function Navigation() {
               ))}
             </ButtonGroup>
           </Nav>
-        </Navbar.Collapse>
+
+          <div className="d-block align-items-center d-md-none">
+
+          <Button variant="primary" onClick={handleShow} className="canvas-nav-btn">
+              <RiMenu5Fill />
+          </Button>
+
+          <Offcanvas show={show} onHide={handleClose} placement="top">
+              <Offcanvas.Body className={context.munichTheme ? 'd-flex justify-content-start align-items-center canvas-munich-body' : 'd-flex justify-content-start align-items-center canvas-baires-body'}>
+                <Nav className='text-left d-block d-md-none'>
+                  <Nav.Link className='navlink' eventKey={2} href="#projects">
+                    Projects
+                  </Nav.Link>
+                  <Nav.Link className='navlink' eventKey={2} href="#works">
+                    Work Experience
+                  </Nav.Link>
+                  <Nav.Link className='navlink' eventKey={2} href="#contact">
+                    Contact
+                  </Nav.Link>
+
+                  <ButtonGroup className='mt-3'>
+                    {radios.map((radio, index) => (
+                      <ToggleButton
+                        onClick={() => handleThemeChange(radio.value)}
+                        className={radio.class}
+                        key={index}
+                        id={`radio-${index}`}
+                        style={{
+                          borderColor: '#fff',
+                          textDecoration: index.toString() !== radioValue ? 'none' : 'underline',
+                          }}
+                        type="radio"
+                        name="radio"
+                        value={radio.value}
+                        onChange={(e) => setRadioValue(e.currentTarget.value)}
+                      >
+                        {radio.name}
+                      </ToggleButton>
+                    ))}
+                  </ButtonGroup>
+                </Nav>
+              </Offcanvas.Body>
+          </Offcanvas>
+          </div>
       </Container>
     </Navbar>
   );

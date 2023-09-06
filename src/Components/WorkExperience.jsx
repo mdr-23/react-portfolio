@@ -28,9 +28,9 @@ function WorkExperience(){
                                         {work.date}
                                     </h4>
                                     <li>
-                                        <h3 className='mx-3 works-title'>{work.title}</h3>
-                                        <h4 className='mx-3 works-company'>{work.company} - {work.place}</h4>
-                                        <p className="mt-2 mx-3 works-p">
+                                        <h3 className='mx-5 mx-sm-3 works-title'>{work.title}</h3>
+                                        <h4 className='mx-5 mx-sm-3 works-company'>{work.company} - {work.place}</h4>
+                                        <p className="mt-2 mx-5 mx-sm-3 works-p">
                                             {work.description}
                                         </p>
                                     </li>
@@ -41,7 +41,7 @@ function WorkExperience(){
                         </MDBRow>
                     </MDBContainer>
                     
-                {context.munichTheme ? <SvgMuenchen className='munich-svg' /> : <SvgBuenosAires className='baires-svg' />}
+                {context.munichTheme ? <SvgMuenchen /> : <SvgBuenosAires />}
                 
             </Container>
             

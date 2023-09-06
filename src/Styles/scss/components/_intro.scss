@@ -47,3 +47,38 @@
 .munich-intro-p{
     color: $white;
 }
+
+// MOBILE
+
+@media only screen and (max-width: 767px){
+
+    // BAIRES STYLES
+
+    .baires-intro-title{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .title-martin-baires{
+        font-size: 50px;
+    }
+
+    .baires-intro-p{
+        padding: 0 25px;
+    }
+
+    // MUNICH STYLES
+
+    .munich-intro-title{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .title-martin-munich{
+        font-size: 50px;
+    }
+
+    .munich-intro-p{
+        padding: 0 25px;
+    }
+}

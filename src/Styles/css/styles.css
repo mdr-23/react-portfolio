@@ -25,18 +25,54 @@
 .brand {
   font-family: "Brand";
   font-size: 30px;
+  color: #101010;
+}
+
+.navlink {
+  font-family: "Roboto Bold";
+  position: relative;
+  color: #101010;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: #303030d3;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 2px;
+  bottom: 5%;
+  left: 25%;
+  background-color: #101010;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navlink:hover::before {
+  transform: scaleX(1);
 }
 
 .navbar-baires {
   background-color: #5f91d7 !important;
-  border-bottom: double 9px #fff;
+  border-bottom: double 9px #f0f0f0;
   padding: 20px 110px 20px 110px;
+  position: sticky !important;
+  top: 0%;
+  z-index: 999;
 }
 
 .navbar-munich {
   background-color: #f5d033 !important;
   border-bottom: double 9px #101010;
   padding: 20px 110px 20px 110px;
+  position: sticky !important;
+  top: 0%;
+  z-index: 999;
 }
 
 .btn-baires {
@@ -46,6 +82,7 @@
   border-left: none !important;
   color: #101010 !important;
   padding-left: 50px;
+  font-family: "Roboto Bold";
 }
 
 .btn-munich {
@@ -54,10 +91,39 @@
   border-top: none !important;
   border-bottom: none !important;
   border-right: none !important;
+  font-family: "Roboto Bold";
 }
 
+@media only screen and (max-width: 767px) {
+  .btn-baires {
+    padding-left: 0px;
+  }
+
+  .navbar-baires {
+    padding: 20px 40px 20px 40px;
+  }
+
+  .canvas-nav-btn {
+    background-color: transparent !important;
+    border: none;
+    color: #101010;
+    font-size: 25px;
+  }
+
+  .canvas-baires-body {
+    background-color: #5f91d7;
+  }
+
+  .navbar-munich {
+    padding: 20px 40px 20px 40px;
+  }
+
+  .canvas-munich-body {
+    background-color: #f5d033;
+  }
+}
 .intro-baires {
-  background-color: #fff !important;
+  background-color: #f0f0f0 !important;
   height: 86.3vh;
 }
 
@@ -92,7 +158,7 @@
   line-height: 80px;
   padding-top: 100px;
   padding-left: 50px;
-  color: #fff;
+  color: #f0f0f0;
 }
 
 .title-martin-munich {
@@ -103,9 +169,36 @@
 }
 
 .munich-intro-p {
-  color: #fff;
+  color: #f0f0f0;
 }
 
+@media only screen and (max-width: 767px) {
+  .baires-intro-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .title-martin-baires {
+    font-size: 50px;
+  }
+
+  .baires-intro-p {
+    padding: 0 25px;
+  }
+
+  .munich-intro-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .title-martin-munich {
+    font-size: 50px;
+  }
+
+  .munich-intro-p {
+    padding: 0 25px;
+  }
+}
 .skills-slider-img {
   height: 180px;
   margin: 100px 0 200px 0;
@@ -124,7 +217,7 @@
   font-family: "Brand";
   font-size: 15px !important;
   padding: 100px 50px 0 50px;
-  color: #fff;
+  color: #f0f0f0;
 }
 
 .baires-skills-title {
@@ -145,7 +238,7 @@
   font-family: "Brand";
   font-size: 15px !important;
   padding: 50px 50px 0 50px;
-  color: #fff;
+  color: #f0f0f0;
 }
 
 .munich-skills-title {
@@ -153,6 +246,29 @@
   padding: 0px 50px;
 }
 
+@media only screen and (max-width: 767px) {
+  .skills-slider-img {
+    height: 150px;
+  }
+
+  .baires-skills-subtitle {
+    font-size: 12px !important;
+    padding: 100px 25px 0 25px;
+  }
+
+  .baires-skills-title {
+    padding: 0px 25px 0 25px;
+  }
+
+  .munich-skills-subtitle {
+    font-size: 12px !important;
+    padding: 100px 25px 0 25px;
+  }
+
+  .munich-skills-title {
+    padding: 0px 25px 0 25px;
+  }
+}
 .one-bg {
   background-image: url("../../Images/one-to-one.png");
   background-size: cover;
@@ -188,14 +304,14 @@
 }
 
 .projects-baires {
-  background-color: #fff;
+  background-color: #f0f0f0;
   padding-bottom: 100px;
 }
 
 .baires-card-veil {
   background-color: #5f91d79f !important;
   margin: -1px -13px;
-  border: solid #fff 3px;
+  border: solid #f0f0f0 3px;
   border-radius: 5px;
   height: 24rem;
   width: 15rem;
@@ -208,7 +324,7 @@
 }
 
 .baires-web-icon:hover {
-  color: #fff;
+  color: #f0f0f0;
 }
 
 .baires-github-icon {
@@ -217,7 +333,7 @@
 }
 
 .baires-github-icon:hover {
-  color: #fff;
+  color: #f0f0f0;
 }
 
 .baires-card-veil2 {
@@ -232,7 +348,7 @@
   padding-top: 15px;
   font-family: "Brand";
   font-size: 22px;
-  color: #fff;
+  color: #f0f0f0;
 }
 
 .baires-card-subtitle {
@@ -261,7 +377,7 @@
 .munich-projects-p {
   font-family: "Roboto Bold" !important;
   padding: 0px 350px 50px 50px;
-  color: rgba(196, 196, 196, 0.767);
+  color: #cacacab6;
   font-size: 18px;
 }
 
@@ -311,15 +427,39 @@
 .munich-card-subtitle {
   font-family: "Roboto Black";
   font-size: 14px;
-  color: #fff;
+  color: #f0f0f0;
   margin: 15px 0;
 }
 
 .munich-card-text {
-  color: #fff;
+  color: #f0f0f0;
   font-size: 12px;
 }
 
+@media only screen and (max-width: 767px) {
+  .baires-projects-subtitle {
+    font-size: 15px !important;
+    padding: 100px 25px 0 25px;
+  }
+
+  .baires-projects-p {
+    font-family: "Roboto Bold" !important;
+    padding: 0px 25px 50px 25px;
+    font-size: 16px;
+  }
+
+  .munich-projects-title {
+    font-family: "Title";
+    padding: 0px 25px;
+    color: #f5d033;
+  }
+
+  .munich-projects-p {
+    font-family: "Roboto Bold" !important;
+    padding: 0px 25px 50px 25px;
+    font-size: 16px;
+  }
+}
 .works-title {
   font-family: "Roboto Black";
   font-size: 22px;
@@ -384,11 +524,12 @@ ul.timeline-baires > li:before {
   z-index: 400;
 }
 
-.baires-svg {
-  margin: 0 auto !important;
+.SVGbaires {
   display: flex !important;
   justify-content: center !important;
-  text-align: center !important;
+  margin: 0 auto !important;
+  position: relative;
+  top: 5px;
 }
 
 .works-munich {
@@ -430,16 +571,108 @@ ul.timeline-munich > li:before {
   z-index: 400;
 }
 
-.munich-svg {
+.SVGmuenchen {
   display: flex !important;
   justify-content: center !important;
   margin: 0 auto !important;
   position: relative;
-  top: 5px;
+  top: 5px !important;
 }
 
+@media only screen and (max-width: 767px) {
+  .works-title {
+    font-size: 20px;
+  }
+
+  .works-date {
+    font-size: 10px;
+    position: relative;
+    right: 28px;
+    top: 35px;
+    text-align: left !important;
+  }
+
+  .works-company {
+    font-size: 16px;
+  }
+
+  .works-p {
+    font-size: 14px;
+    padding-right: 0px;
+  }
+
+  ul.timeline-baires:before {
+    content: " ";
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 45px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+
+  ul.timeline-baires > li {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+
+  ul.timeline-baires > li:before {
+    content: " ";
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #5f91d79f;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+
+  .SVGbaires {
+    height: 100px !important;
+    max-width: 350px !important;
+    margin-bottom: -6px;
+  }
+
+  ul.timeline-munich:before {
+    content: " ";
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 45px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+
+  ul.timeline-munich > li {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+
+  ul.timeline-munich > li:before {
+    content: " ";
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #f5d0339f;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+
+  .SVGmuenchen {
+    height: 100px;
+    width: 350px;
+    margin-bottom: -6px;
+  }
+}
 .contact-baires {
-  background-color: #fff;
+  background-color: #f0f0f0;
   padding: 100px 0;
 }
 
@@ -459,7 +692,7 @@ ul.timeline-munich > li:before {
 .baires-contact-card {
   border: none;
   padding: 50px 50px 0 50px;
-  background-color: rgba(196, 196, 196, 0.767);
+  background-color: #cacacab6;
   width: 50% !important;
 }
 
@@ -471,7 +704,7 @@ ul.timeline-munich > li:before {
 }
 
 .baires-contact-form input, textarea {
-  background-color: #fff !important;
+  background-color: #f0f0f0 !important;
   border: none !important;
   color: #101010 !important;
   font-family: "Roboto Bold";
@@ -505,7 +738,7 @@ ul.timeline-munich > li:before {
 .munich-contact-subtitle {
   font-family: "Brand";
   font-size: 15px !important;
-  color: #fff;
+  color: #f0f0f0;
   padding-left: 10px;
 }
 
@@ -524,7 +757,7 @@ ul.timeline-munich > li:before {
 
 .munich-contact-form input, textarea, label {
   border-color: #101010 !important;
-  color: #fff !important;
+  color: #f0f0f0 !important;
   font-family: "Roboto Bold";
   font-size: 18px;
 }
@@ -565,12 +798,29 @@ ul.timeline-munich > li:before {
   border: none !important;
 }
 
+@media only screen and (max-width: 767px) {
+  .baires-contact-card {
+    padding: 50px 15px 0 15px;
+    width: 100% !important;
+  }
+
+  .munich-contact-card {
+    padding: 50px 15px 0 15px;
+    width: 100% !important;
+  }
+}
 body {
   background-color: #101010 !important;
 }
 
 p {
   font-family: "Roboto Regular" !important;
+}
+
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

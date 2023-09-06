@@ -61,11 +61,12 @@ ul.timeline-baires {
     z-index: 400;
   }
 
-.baires-svg{
-  margin: 0 auto !important;
+.SVGbaires{
   display: flex !important;
   justify-content: center !important;
-  text-align: center !important;
+  margin: 0 auto !important;
+  position: relative;
+  top: 5px;
 }
 
 
@@ -106,10 +107,106 @@ ul.timeline-munich {
     z-index: 400;
   }
 
-.munich-svg{
+.SVGmuenchen{
   display: flex !important;
   justify-content: center !important;
   margin: 0 auto !important;
   position: relative;
-  top: 5px;
+  top: 5px !important;
+}
+
+// MOBILE STYLES
+
+@media only screen and (max-width: 767px){
+
+.works-title{
+    font-size: 20px;
+}
+
+.works-date{
+    font-size: 10px;
+    position: relative;
+    right: 28px;
+    top: 35px;
+    text-align: left !important;
+}
+
+.works-company{
+    font-size: 16px;
+}
+
+.works-p{
+    font-size: 14px;
+    padding-right: 0px;
+}
+
+  // BAIRES STYLES
+
+  ul.timeline-baires:before {
+    content: " ";
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 45px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+  ul.timeline-baires > li {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  ul.timeline-baires > li:before {
+    content: " ";
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid $baires-veil;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+
+  .SVGbaires{
+    height: 100px !important;
+    max-width: 350px !important;
+    margin-bottom: -6px;
+  }
+
+  // MUNICH STYLES
+  
+  ul.timeline-munich:before {
+    content: " ";
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 45px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+  ul.timeline-munich > li {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  ul.timeline-munich > li:before {
+    content: " ";
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid $munich-veil;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+
+  .SVGmuenchen{
+    height: 100px;
+    width: 350px;
+    margin-bottom: -6px;
+  }
 }

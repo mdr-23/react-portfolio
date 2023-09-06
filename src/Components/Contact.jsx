@@ -12,22 +12,6 @@ function Contact(){
 
     const context = useContext(ThemeContext)
 
-    const [name, setName] = useState()
-    const [email, setEmail] = useState()
-    const [message, setMessage] = useState()
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        console.log('Nombre: ', name);
-        console.log('Email: ', email);
-        console.log('Message: ', message);
-
-        setName('');
-        setEmail('');
-        setMessage('');
-    }
-
     return(
         
         <section className={context.munichTheme ? 'contact-munich' : 'contact-baires'} id='contact'>
@@ -49,17 +33,17 @@ function Contact(){
                                 >
                                     <Form.Group className="mb-3" controlId="formGroupName">
                                         <Form.Label>Name</Form.Label>
-                                        <Form.Control name='name' type="text" onChange={(e) => setName(e.target.value)} />
+                                        <Form.Control name='name' type="text" />
                                     </Form.Group>
 
                                     <Form.Group className="mb-3" controlId="formGroupEmail">
                                         <Form.Label>Email</Form.Label>
-                                        <Form.Control name='email' type="email" onChange={(e) => setEmail(e.target.value)} />
+                                        <Form.Control name='email' type="email" />
                                     </Form.Group>
 
                                     <Form.Group className="mb-3" controlId="formGroupEmail">
                                         <Form.Label>Message</Form.Label>
-                                        <Form.Control name='message' as="textarea" aria-label="With textarea" onChange={(e) => setMessage(e.target.value)} />
+                                        <Form.Control name='message' as="textarea" aria-label="With textarea" />
                                     </Form.Group>
 
                                     <Button type="submit">

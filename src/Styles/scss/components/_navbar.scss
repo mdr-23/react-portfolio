@@ -1,18 +1,54 @@
 .brand{
     font-family: 'Brand';
     font-size: 30px;
+    color: $black;
 }
+
+.navlink{
+    font-family: 'Roboto Bold';
+    position: relative;
+    color: $black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navlink:hover{
+    color: $black-veil;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 2px;
+    bottom: 5%;
+    left: 25%;
+    background-color: $black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navlink:hover::before {
+    transform: scaleX(1);
+  }
 
 .navbar-baires{
     background-color: $baires !important;
     border-bottom: double 9px $white;
     padding: 20px 110px 20px 110px;
+    position: sticky !important;
+    top: 0%;
+    z-index: 999;
 }
 
 .navbar-munich{
     background-color: $munich !important;
     border-bottom: double 9px $black;
     padding: 20px 110px 20px 110px;
+    position: sticky !important;
+    top: 0%;
+    z-index: 999;
 }
 
 .btn-baires{
@@ -22,6 +58,7 @@
     border-left: none !important;
     color: $black !important;
     padding-left: 50px;
+    font-family: 'Roboto Bold';
 }
 
 .btn-munich{
@@ -30,4 +67,35 @@
     border-top: none !important;
     border-bottom: none !important;
     border-right: none !important;
+    font-family: 'Roboto Bold';
+}
+
+@media only screen and (max-width: 767px){
+
+    .btn-baires{
+        padding-left: 0px;
+    }
+
+    .navbar-baires{
+        padding: 20px 40px 20px 40px;
+    }
+    
+    .canvas-nav-btn{
+        background-color: transparent !important;
+        border: none;
+        color: $black;
+        font-size: 25px;
+    }
+
+    .canvas-baires-body{
+        background-color: $baires;
+    }
+
+    .navbar-munich{
+        padding: 20px 40px 20px 40px;
+    }
+
+    .canvas-munich-body{
+        background-color: $munich;
+    }
 }

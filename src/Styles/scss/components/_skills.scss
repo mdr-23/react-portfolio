@@ -50,3 +50,35 @@
     font-family: "Title";
     padding: 0px 50px;
 }
+
+// MOBILE STYLES
+
+@media only screen and (max-width: 767px){
+
+    .skills-slider-img{
+        height: 150px;
+    }
+
+    // BAIRES STYLES
+
+    .baires-skills-subtitle{
+        font-size: 12px !important;
+        padding: 100px 25px 0 25px;
+    }
+    
+    .baires-skills-title{
+        padding: 0px 25px 0 25px;
+    }
+
+    // MUNICH STYLES
+
+    .munich-skills-subtitle{
+        font-size: 12px !important;
+        padding: 100px 25px 0 25px;
+    }
+    
+    .munich-skills-title{
+        padding: 0px 25px 0 25px;
+    }
+
+  }
