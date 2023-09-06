@@ -57,6 +57,12 @@
 
 .baires-contact-form button:hover{
     background-color: $baires-dark;
+    border-color: $baires-dark;
+}
+
+.baires-contact-form button:disabled{
+    background-color: $baires-veil;
+    border-color: $baires-veil;
 }
 
 // MUNICH STYLES
@@ -118,8 +124,13 @@
 }
 
 .munich-contact-form button:hover{
-    background-color: $munich-veil;
+    background-color: $munich-dark;
     color: $black;
+    border-color: $munich-dark;
+}
+
+.munich-contact-form button:disabled{
+    background-color: $munich-veil;
     border-color: $munich-veil;
 }
 

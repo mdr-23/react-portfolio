@@ -728,6 +728,12 @@ ul.timeline-munich > li:before {
 
 .baires-contact-form button:hover {
   background-color: #4072b8;
+  border-color: #4072b8;
+}
+
+.baires-contact-form button:disabled {
+  background-color: #5f91d79f;
+  border-color: #5f91d79f;
 }
 
 .contact-munich {
@@ -787,8 +793,13 @@ ul.timeline-munich > li:before {
 }
 
 .munich-contact-form button:hover {
-  background-color: #f5d0339f;
+  background-color: #b19727;
   color: #101010;
+  border-color: #b19727;
+}
+
+.munich-contact-form button:disabled {
+  background-color: #f5d0339f;
   border-color: #f5d0339f;
 }
 
@@ -809,6 +820,45 @@ ul.timeline-munich > li:before {
     width: 100% !important;
   }
 }
+.email-sent-container {
+  background-color: #101010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 100px;
+}
+
+.email-sent-h1 {
+  font-family: "Title";
+  color: #5f91d7;
+}
+
+.email-sent-h2 {
+  font-family: "Roboto Black";
+  margin-top: 50px;
+  color: #5f91d7;
+}
+
+.danke-span {
+  font-family: "Brand";
+  color: #f5d033;
+}
+
+.email-sent-link {
+  background-color: #f5d033;
+  border-color: #f5d033;
+  font-family: "Roboto Bold";
+  color: #101010;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #f5d033;
+  text-decoration: none;
+}
+
 body {
   background-color: #101010 !important;
 }

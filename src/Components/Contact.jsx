@@ -12,6 +12,19 @@ function Contact(){
 
     const context = useContext(ThemeContext)
 
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+    const [alert, setAlert] = useState({className: '', text: ''})
+
+/*     const handleSubmit = () => {
+        if(name === "" || email === "" || message === ""){
+            setAlert({className: 'alert-danger', text: 'All fields are required'})
+        }else{
+            setAlert({className: 'alert-success', text: ''})
+        }
+    } */
+
     return(
         
         <section className={context.munichTheme ? 'contact-munich' : 'contact-baires'} id='contact'>
@@ -29,28 +42,36 @@ function Contact(){
                             <Card.Text>
                                 <Form 
                                     className={context.munichTheme ? 'munich-contact-form' : 'baires-contact-form'} 
-                                    action="1595387810424f7ec4e6020472a64d66" method="POST"
+                                    action="https://formsubmit.co/delrosariomartin23@gmail.com" method="POST"
                                 >
                                     <Form.Group className="mb-3" controlId="formGroupName">
-                                        <Form.Label>Name</Form.Label>
-                                        <Form.Control name='name' type="text" />
+                                        <Form.Label>Name *</Form.Label>
+                                        <Form.Control name='name' required type="text" onChange={(e) => setName(e.target.value)} />
                                     </Form.Group>
 
                                     <Form.Group className="mb-3" controlId="formGroupEmail">
-                                        <Form.Label>Email</Form.Label>
-                                        <Form.Control name='email' type="email" />
+                                        <Form.Label>Email *</Form.Label>
+                                        <Form.Control name='email' required type="email" onChange={(e) => setEmail(e.target.value)} />
                                     </Form.Group>
 
                                     <Form.Group className="mb-3" controlId="formGroupEmail">
-                                        <Form.Label>Message</Form.Label>
-                                        <Form.Control name='message' as="textarea" aria-label="With textarea" />
+                                        <Form.Label>Message *</Form.Label>
+                                        <Form.Control name='message' required as="textarea" aria-label="With textarea" onChange={(e) => setMessage(e.target.value)} />
                                     </Form.Group>
 
-                                    <Button type="submit">
-                                        Send Email <RiMailSendFill className='mx-1' />
-                                    </Button>
+                                    {name === "" || email === "" || message === "" ? (
+                                        <Button type="submit" disabled>
+                                            Send Email <RiMailSendFill className='mx-1' />
+                                        </Button>
+                                    ) : (
+                                        <Button type="submit">
+                                            Send Email <RiMailSendFill className='mx-1' />
+                                        </Button>
+                                    )}
 
-                                    <input type="hidden" name="_next" value="http://localhost:3000/" />
+                                    <input type="hidden" name="_next" value="https://mdr-portfolio.onrender.com//email-sent" />
+                                    <input type="hidden" name="_captcha" value="false" />
+                                    <input type="hidden" name="_template" value="table" />
                                 </Form>
                             </Card.Text>
 

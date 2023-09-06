@@ -1,0 +1,38 @@
+.email-sent-container{
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 100px;
+}
+
+.email-sent-h1{
+    font-family: 'Title';
+    color: $baires;
+}
+
+.email-sent-h2{
+    font-family: 'Roboto Black';
+    margin-top: 50px;
+    color: $baires;
+}
+
+.danke-span{
+    font-family: 'Brand';
+    color: $munich;
+}
+
+.email-sent-link{
+    background-color: $munich;
+    border-color: $munich;
+    font-family: 'Roboto Bold';
+    color: $black;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid $munich;
+    text-decoration: none;
+}
